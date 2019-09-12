@@ -14,6 +14,11 @@ namespace D2_Conditional_Statement
 
                 int grade = int.Parse(input);
 
+                if ((grade < 0) || (grade > 100))
+                {
+                    Console.WriteLine("The value that you have entered is invalid. Please resart the program and try again.");
+                }
+
                 //A+ output
                 if ((grade <= 100) && (grade >= 98))
                 {
